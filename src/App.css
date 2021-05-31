@@ -1,38 +1,538 @@
-.App {
-  text-align: center;
+  
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Poppins";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo{
+height: 30px;
+width: 107px;
+left: -880px;
+top: -610px;
+border-radius: 0px;
+
+}
+
+
+
+#sidebar {
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 900px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: 200ms width;
+}
+
+.title-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 20px 25px;
+}
+
+
+.title{
+margin-bottom: 6px;
+width: 80px;
+height: 17px;
+
+font-family: 'Space Grotesk', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #2A2A2A;
+  
+   height: 17px;
+   margin-left: 80px;
+}
+
+.title-container h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+.links-container {
+  padding: 50px 40px;
+  margin-right: 0;
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links span.main-title{
+  
+font-family: 'Founders Grotesk',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+color: #2A2A2A;
+
+}
+
+.icon {
+  height: 50px;
+  width: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 15px;
+  color: gainsboro;
+  cursor: grab;
+  
+}
+ .links .icon :hover {
+  cursor: pointer;
+}
+
+.links span {
+  padding: 0px 20px;
+font-family: 'Founders Grotesk'sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.1px;
+color: #A6ABB2;
+  
+}
+
+ .links-container #item-link.links span.hover-item :hover{
+  cursor: pointer !important;
+}
+
+
+#main-dashboard-content {
+  margin-left: 280px;
+  box-sizing: border-box;
+  height: 900px;
+  padding: 20px 25px;
+  transition: 400ms margin-left;
+}
+
+.balance{
+  color: #A6ABB2;
+font-family: "Founders Grotesk";
+  
+Font-style: regular;
+Font-size: 12px;
+Align: Left;
+Vertical-align: Top
+}
+.balance-one{
+
+Font-family:" Space Grotesk";
+Font-style: Bold;
+Font-size: 18px;
+Align: Left;
+vertical-align: Top;
+Fill: Solid;
+color: #2A2A2A;
+
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+
+.action-icon-one,
+.action-icon-two {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 8px;
+}
+
+.action-icon-two {
+  background-color: rgba(255, 131, 119, 0.1);
+}
+.action-icon-one{
+  color: #A6ABB2 !important;
+}
+
+.action-icons {
+  display: flex;
+}
+
+#top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.gridone{
+display: flex;
+justify-content: space-between;
+}
+
+.grid-one{
+padding: 12px;
+
+}
+
+.grid-one .total-margin{
+ color: #2C665D !important;
+margin: 7px 15px ;
+padding: 5px;
+
+
+}
+
+.selectcurrency{
+  margin: 7px 15px ;
+  
+}
+
+
+.styled select {
+  background-color:rgb(243, 243, 243) ;
+
+  width: 100px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  border: 0px;
+  outline: 0px;
+  height: 34px;
+   cursor: pointer;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.styled {
+  margin: 0px;
+  width: 120px;
+  height: 34px;
+  border-style: none;
+  border: none;
+  border: 0px solid #F5F5F5;
+  border-radius: 3px;
+  overflow: hidden;
+ 
+}
+
+
+.styled select option{
+border: 1px solid black;
+}
+
+.dollers{
+  padding: 18px;
+  font-style: bold;
+  font-size: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.1;
+ color: #2A2A2A;
+}
+
+#mainDiv {
+margin-right: 25px;
+margin-top: 8px;
+  width: 370px;
+  position: relative;
+  border-bottom: 2px solid #EBEBEB;
+
+}
+
+#border-bottom {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+
+
+.card-container{
+  width:785px;
+  height: 176px;
+  border: 1px solid blue;
+  margin-top: 60px;
+  border-radius: 5px;
+  display: flex;justify-content: space-between;
+  
+}
+
+.card-right{
+   width: 578px;
+   top: -450px;
+   background-color: green;
+   margin-left: 5px;
+}
+ 
+#gridcontainer{
+  display: flex;
+  margin-top: 50px;
+
+}
+
+.grid-one{
+height: 176px;
+width: 378px;
+border-right-style: none !important;
+margin-right: 0px;
+border-radius: 10px 0px 0px 10px;
+border: 1px solid #EBEBEB;
+}
+.grid-two{
+height: 176px;
+border-radius: 10px;
+width: 370px;
+border: 1px solid #EBEBEB;
+margin-left: -8px;
+padding-left: 0px;
+box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+background-color:  #F5F5F5;
+
+}
+
+
+.gridtwo-item{
+  margin: 25px;
+  color: #2A2A2A;
+  font-family: 'Founders Grotesk', sans-serif;
+Font-style: regular;
+Font-size: 8px;
+font-size: 15px !important;
+Align: Left
+}
+
+
+
+
+
+#payoutcontainer{
+  margin-top: 50px;
+display: flex;
+justify-content: space-between;
+}
+
+#payoutcontainer.paytab{
+Font-family: 'Space Grotesk', sans-serif;
+Font-style: Bold;
+Font-size: 18px;
+Align: Left;
+vertical-align: Top;
+letter-spacing:0.1px;
+Fill: Solid;
+color: #2A2A2A; 
+
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+
+}
+.form{
+  display: flex;
+  justify-content: space-around;
+}
+.form input[type="text"]{
+border:.1px solid #EBEBEB; 
+padding-left: 13px;
+  height: 48px;
+  margin-left: 5px;
+  background-color: #FFFFFF;
+  text-align: start;
+  width: 400px;
+}
+
+
+
+.form i {
+  color: #5f5f5f;
+  margin-left: -30px;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.form input[type="date"]{
+  border:.1px solid #EBEBEB; 
+  width: 70%;
+  margin-left: 18px;
+  background-color: #FFFFFF;
+  height: 48px;
+}
+
+.form button[type="submit"]{
+  border: none;
+  outline: none;
+  width: 120px;
+  border-radius: 5px;
+  margin-left: -15px;
+  height: 48px;
+  background-color: #3D8F83;
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.payoutbutton{
+  Font-family: sans-serif;
+Font-style: Bold;
+Font-size: 17px;
+Align: Left;
+Vertical-align: Center;
+Fill: Solid;
+ color:#FFFFFF
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+.form input[type="text, date"] :focus {
+Font-family: 'Founders Grotesk',sans-serif;
+Font-style: Regular;
+Font-size: 14px;
+Align: Left;
+Vertical-align: Center;
+Fill: Solid;
+ color: #2A2A2A;
+
+}
+
+.form input[type="text"]:focus{
+ border:.1px solid rgba(87, 87, 231, 0.979) !important;
+ outline:blue; 
+ border: blue;
+}
+
+.form input[type="text, date"] :hover{
+  cursor: crosshair;
+}
+
+
+
+table .theader{
+  font-size: 20px !important;
+font-family: 'Space Grotesk,'sans-serif;
+font-size: 8px;
+font-style: normal;
+font-weight: 500;
+
+}
+
+table tr td{
+font-family: 'Founders Grotesk',sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: .1em;
+text-align: left;
+
+font-style: Regular;
+Align: Left;
+vertical-align: Top;
+Fill: Solid;
+color: #2A2A2A;
+
+}
+
+@media (max-width: 1400px) {
+  #grid-container {
+    grid-template-columns: 100%;
   }
 }
+
+
+
+@media (max-width: 950px) {
+  .title-container h1 {
+    display: none;
+  }
+  .links span {
+    display: none;
+  }
+  #sidebar {
+    width: 75px;
+  }
+  #main-dashboard-content {
+    margin-left: 75px;
+  }
+  .title-container {
+    padding: 10px;
+  }
+.logo{
+  width: 60px;
+  height: 15px;
+}
+#gridcontainer{
+display: flex;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.gridone{
+display: flex;
+flex-wrap: wrap;
+  
+}
+#payoutcontainer{
+   margin-top: 20px;
+  display: block;
+
+}
+
+#gridcontainer{
+display: flex;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  #payoutcontainer{
+   margin-top: 20px;
+  display: block;
+}
+.maincontainer{
+  margin: 0px;
+  padding: 0px;
+}
+.grid-two{
+  width: 200px;
+  margin: 0;
+}
+.grid-one{
+padding: 0px;
+width: 250px;
+}
+html{
+  width:300px
+}
+#payoutcontainer{
+  display: block;
+}
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
